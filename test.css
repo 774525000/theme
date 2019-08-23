@@ -1,0 +1,18 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	padding: 20px;
+}
+
+:root{
+	--bg: #ff80c0;
+}
+
+section{
+	min-height: 200px;
+	background: var(--bg);
+	margin-top: 20px;
+}

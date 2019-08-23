@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>换肤</title>
+    <link rel="stylesheet" href="./test.css">
+</head>
+<body>
+    <label>点我更换主题哦：<input type="color" value='#ff80c0' id="theme"></label>
+    <section></section>
+    <script>
+        const themes = ()=>{
+            const theme= document.querySelector('#theme')
+            const body = document.documentElement || document.body
+            theme.onchange = e => {
+                body.style.setProperty('--bg', e.target.value)
+            }
+        }
+
+        themes()
+    </script>
+</body>
+</html>
